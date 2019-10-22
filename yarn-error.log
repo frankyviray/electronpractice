@@ -1,0 +1,64 @@
+Arguments: 
+  /usr/local/bin/node /usr/local/bin/yarn install
+
+PATH: 
+  /Library/Frameworks/Python.framework/Versions/3.7/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/share/dotnet:/Library/Frameworks/Mono.framework/Versions/Current/Commands:/Applications/Xamarin Workbooks.app/Contents/SharedSupport/path-bin:/Library/Frameworks/Python.framework/Versions/3.7/bin
+
+Yarn version: 
+  1.5.1
+
+Node version: 
+  8.11.4
+
+Platform: 
+  darwin x64
+
+npm manifest: 
+  {
+    "name": "ace-catalog",
+    "version": "1.0.0",
+    "description": "",
+    "main": "main.js",
+    "scripts": {
+      "start": "electron .",
+      "test": "echo \"Error: no test specified\" && exit 1",
+      "package-mac": "electron-packager ./ Catalog --all --out ~/Desktop/Catalog --version 2.0.1",
+      "package-win": "electron-packager . ace-catalog --overwrite --asar=true --platform=win32 --arch=ia32 --icon=assets/icons/win/icon.ico --prune=true --out=release-builds --version-string.CompanyName=CE --version-string.FileDescription=CE --version-string.ProductName=\"Ace Industrial Tool Catalog\"",
+      "dist": "build"
+    },
+    "author": "Peter Hoang",
+    "license": "ISC",
+    "dependencies": {
+      "bootstrap": "^4.1.1",
+      "jquery": "^3.3.1"
+    },
+    "devDependencies": {
+      "electron": "^2.0.1",
+      "electron-packager": "^12.1.0",
+      "electron-builder": "^20.26.1"
+    },
+    "build": {
+      "appId": "com.ace.catalogue",
+      "win": {
+        "target": "nsis",
+        "icon": "build/icon.ico"
+      }
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
+
+Trace: 
+  Error: Found incompatible module
+      at new MessageError (/usr/local/lib/node_modules/yarn/lib/cli.js:186:110)
+      at checkOne (/usr/local/lib/node_modules/yarn/lib/cli.js:62444:11)
+      at Object.check (/usr/local/lib/node_modules/yarn/lib/cli.js:62463:5)
+      at /usr/local/lib/node_modules/yarn/lib/cli.js:22803:73
+      at Generator.next (<anonymous>)
+      at step (/usr/local/lib/node_modules/yarn/lib/cli.js:98:30)
+      at /usr/local/lib/node_modules/yarn/lib/cli.js:109:13
+      at <anonymous>

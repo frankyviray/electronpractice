@@ -1,0 +1,35 @@
+.navbar img {
+    margin: 10px 10px 50px 25px;
+}
+
+.category:hover {
+    cursor: pointer;
+}
+#result-card {
+    display: none;
+}
+
+#result-img {
+    display: block;
+    max-width:75px;
+    max-height:75px;
+    width: auto;
+    height: auto;
+}
+
+.product {
+    min-height: 100px;
+    height: 100px;
+}
+
+td {
+    vertical-align: middle !important;
+}
+
+#search-wrapper {
+    margin-bottom: 10px;
+}
+
+body {
+    background-color: #B6261D;
+}

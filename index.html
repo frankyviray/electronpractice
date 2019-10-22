@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <title>Ace Industrial Supply Catalog</title>
+</head>
+
+<body>
+    <div id="nav-wrapper">
+        <nav class="navbar">
+            <a class="navbar-brand" href="start.html">
+                <img src="assets/img/ace_logo.png" width="400px" height="" alt="">
+            </a>
+
+        </nav>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-3">
+                <form id="search-wrapper" class="input-group mb-3">
+                    <input id="searchInput" class="form-control" type="search" placeholder="Search" aria-label="Search">
+                    <div class="input-group-append">
+                        <button id="searchSubmit" class="btn btn-primary" type="submit">Search</button>
+                    </div>
+                </form>
+                <div class="card">
+                    <h6 class="card-header">
+                        ID - Categories
+                    </h6>
+                    <ul id="category-list" class="list-group">
+                        <!-- categories populate here -->
+                    </ul>
+                </div>
+            </div>
+            <div class="col-9">
+                <div id="result-card"class="card">
+                    <table class="table">
+                        <thead class="card-header">
+                            <tr>
+                                <th scope="col" style="width:15%;">Image</th>
+                                <th scope="col" style="width:10%;">Item #</th>
+                                <th scope="col" style="width:65%;">Description</th>
+                                <th scope="col" style="width:10%;"></th>
+                            </tr>
+                        </thead>
+                        <tbody id="category-result">
+                            <!-- results populate here -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- SCRIPTS -->
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="assets/js/index.js"></script>
+</body>
+</html>
